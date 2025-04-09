@@ -1,0 +1,123 @@
+/* 
+
+.menu{
+width: 300px;
+height: 500px;
+background-color: aqua;
+transition-property: background-color;
+transition-duration: 3000ms;
+transition-timing-function:cubic-bezier(0,2.13,1,.64) ;
+/* transition-delay: 1s; */
+/* 
+.menu:hover{
+background-color: rgb(107, 48, 162);
+.p{
+    color: rgb(172, 83, 173);
+}
+}
+
+.p{
+    font-size: 40px;
+    font-family: inherit;
+    color: #000;
+    letter-spacing: 5px;
+    transition-property: color;
+transition-duration: 3000ms;
+transition-timing-function:cubic-bezier(0,2.13,1,.64) ; */
+ 
+.container{
+width: 100%;
+height: 700px;
+background-color:rebeccapurple;
+position: relative;
+
+animation-duration: 3000ms;
+ animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ animation-delay: 500ms;
+ animation-iteration-count: infinite;
+ animation-direction:alternate ;
+}
+.container-element{
+    width: 200px;
+    height: 200px;
+    background-color: #be198a;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+ animation-name: muve-box;
+ animation-duration: 3000ms;
+ animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ animation-delay: 500ms;
+ animation-iteration-count: infinite;
+ animation-direction:alternate ;
+ 
+}
+.container-box{
+    width: 200px;
+    height: 200px;
+    background-color: #2a19be;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    animation-name:change-bg ;
+    animation-duration: 3000ms;
+ animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ animation-delay: 500ms;
+ animation-iteration-count: infinite;
+ animation-direction:alternate ;
+ text-decoration-style: solid;
+ text-decoration-skip-ink: none;
+ text-decoration-thickness: auto;
+ text-underline-offset: auto;
+ text-underline-position: from-font;
+    
+}
+
+@keyframes muve-box{
+    0%{
+        background-color: #be198a;
+        transform:translate(200px,200px) ;
+        text-decoration-line: underline;
+
+   
+    }
+    25%{
+background-color: rgb(201, 121, 220);
+transform:translate(300px,300px) ;
+    }
+    50%{
+background-color: rgb(222, 53, 231);
+transform:translate(400px,400px) ;
+    }
+    75%{
+background-color: rgb(236, 8, 209);
+transform:translate(500px,500px) ;
+    }
+    100%{
+background-color: rgb(224, 140, 225);
+transform:translate(600px,600px) ;
+    }
+}
+@keyframes change-bg{
+    0%{
+        background-color:#2a19be;
+        transform:translate(200px,600px) ;
+        
+    }
+    25%{
+background-color: rgb(136, 0, 255);
+transform:translate(200px,500px) ;
+    }
+    50%{
+background-color: blue;
+transform:translate(200px,400px) ;
+    }
+    75%{
+background-color: darkmagenta;
+transform:translate(200px,300px) ;
+    }
+    100%{
+        background-color: rgb(67, 9, 87);
+        transform:translate(200px,200px) ;
+    }
+}
