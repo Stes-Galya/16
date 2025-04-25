@@ -87,13 +87,14 @@ transform:translate(0,200px) ;
 background-color: rgb(236, 8, 209);
 transform:translate(400px,200px) ;
     }
-    /* 75%{background-color: rgb(222, 53, 231);
-transform:translate(0,0) ;
+     75%{background-color: rgb(222, 53, 231);
+        transform:translate(400px,0) ;
 
-    } */
+
+    } 
     100%{
 background-color: rgb(224, 140, 225);
-transform:translate(400px, -200px) ;
+transform:translate(0,0) ;
     }
 }
 
